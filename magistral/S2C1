@@ -1,0 +1,58 @@
+# Ejercicio 1
+#a) Inicializar dos variables (con valores escogidos por ustedes), una entera y otra flotante.\\
+
+a =2
+b =7.0
+#b) Imprimir los valores de las variables en un mensaje:\\
+#\verb"la primera tiene un valor de XX y la segunda variable tiene un valor de YY"\\
+print ("la primera tiene un valor de ",a,"y la segunda variable tiene un valor de",b)
+
+#c) Calcular el valor de la segunda variable elevada al valor de la primera e imprimir : \verb"El resultado es ZZ" \\
+def elevarcuadrado(x,y):
+	y= y**x
+	print (y)
+
+elevarcuadrado(a,b)
+
+#d) Crear una lista con los elementos: 101, 26, rio, azul, 31 y 28 e imprimirla.\\
+lista = [101,26,"rio","azul",31,28]
+print (lista)
+
+
+#e) Agregarle a esa lista el elemento: 257 \\
+lista.append(257)
+
+
+
+#f) Hacer una iteraci'on para recorrer dicha lista e imprimir sus elementos.\\
+for a in lista:
+	print (a)
+
+
+#g) Eliminar el elemento rio de la lista e imprimirla nuevamente.\\
+del(lista[2])
+print (lista)
+	
+	
+
+#h) Calcular la longitud de la lista e imprimir: \verb"la longitud de la lista es XX"\\
+print ("la longitud de la lista es", len(lista))
+
+
+
+# Ejercicio 2
+# Complete el siguiente codigo para que:
+# recorra la lista `x` 
+# imprima los numeros impares 
+# y pare de imprimir al encontrar un numero mayor a 800
+
+import numpy as np
+
+x = np.int_(np.random.random(100)*900)
+print(x)
+
+for a in x:
+	if (a%2!=0):
+		print (a)
+	if (a>800):
+		break	
